@@ -24,3 +24,7 @@ the gerco/shellinabox-alpine-build image as it is no longer needed.
 By default, this image will connect to a shell inside a Docker container with almost no tools installed. Since
 this isn't particularly useful, you may want to consider building a new image based on this one that connects
 to an SSH host instead. See the included Dockerfile.ssh for how to do this.
+
+# WARNING!
+There is NO security in this image, it even disables SSL in this version. To use this on the public internet would be
+extremely irresponsible. Either enable SSL or run this behind a reverse proxy that provides SSL. Consider yourself warned!
