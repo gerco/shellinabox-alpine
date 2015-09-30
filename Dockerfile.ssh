@@ -1,0 +1,8 @@
+FROM gerco/shellinabox-alpine
+
+RUN apk add --update openssh && rm -rf /var/cache/apk/*
+
+EXPOSE 4200
+
+CMD ["shellinaboxd", "-s", "/:SSH:your-hostname", "--disable-ssl"]
+
