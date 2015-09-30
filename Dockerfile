@@ -1,7 +1,5 @@
 FROM alpine:3.2
 
-RUN apk --update add openssh && rm /var/cache/apk/*
-
 ADD shellinabox.tar.gz /
 
 # a new user is needed to get access to the container
