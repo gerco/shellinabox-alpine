@@ -1,3 +1,7 @@
+# WARNING
+
+Shell in a box appears to have been abandoned and no longer compiles with vaguely recent versions of OpenSSL. Additionally, due to a bug in its code there is no way to disable SSL during compilation anymore so I can't update this repo to make it build again. I'm Archiving this repo and recommend https://hub.docker.com/r/wettyoss/wetty as a replacement.
+
 # shellinabox-alpine
 ShellInABox Dockerfiles for minimal image based on Alpine Linux 
 
